@@ -1,5 +1,5 @@
 
-$sqlFiles=(Get-ChildItem -Path D:\Test -Recurse).FullName
+$sqlFiles=(Get-ChildItem -Path TestSQL -Recurse).FullName
 
 # Perform iteration to create the same file in each folder
 foreach ($sqlFile in $Thisfile) {
@@ -9,7 +9,7 @@ foreach ($sqlFile in $Thisfile) {
 
     #Invoke-Sqlcmd -InputFile "C:\ScriptFolder\TestSqlCmd.sql" | Out-File -FilePath "C:\ScriptFolder\TestSqlCmd.rpt" Output sent to TestSqlCmd.rpt.
 
-    Write-Host "UserName" $userdetails[0]
-    Write-Host "password" $userdetails[1]
-    Write-Host "numberofservers" $userdetails[2]
+    Write-Output "UserName" $userdetails[0]
+    Write-Output "password" $userdetails[1]
+    Write-Output "numberofservers" $userdetails[2]
 }
