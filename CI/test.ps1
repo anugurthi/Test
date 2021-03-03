@@ -1,5 +1,5 @@
 
-$sqlFiles=(Get-ChildItem savdssdf -Recurse).FullName
+$sqlFiles=(Get-ChildItem -Path D:\Test -Recurse).FullName
 
 # Perform iteration to create the same file in each folder
 foreach ($sqlFile in $Thisfile) {
