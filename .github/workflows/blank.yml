@@ -27,5 +27,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run powershell script
-        run: .\CI\test.ps1
-        shell: pwsh
+        run: echo ${env:PATH}
+        shell: powershell
