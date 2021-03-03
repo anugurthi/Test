@@ -27,5 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run powershell script
-        run: |
-          Get-Location;
+        run: powershell .\test.ps1
