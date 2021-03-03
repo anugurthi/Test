@@ -27,4 +27,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run powershell script
-        run: C:\Program Files\PowerShell\7\pwsh.EXE .\CI\test.ps1
+        run: .\CI\test.ps1
+        shell: powershell
