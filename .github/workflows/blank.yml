@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run powershell script
-        run: powershell ./test.ps1
+        run: powershell .\test.ps1
