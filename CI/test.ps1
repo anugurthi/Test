@@ -1,5 +1,5 @@
 
-$sqlFiles=(Get-ChildItem /usr/bin/git/TestSQL -Recurse).FullName
+$sqlFiles=(Get-ChildItem -Path TestSQL -Recurse).FullName
 
 # Perform iteration to create the same file in each folder
 foreach ($sqlFile in $Thisfile) {
