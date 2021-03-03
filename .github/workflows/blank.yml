@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-2019
+    runs-on: [self-hosted, windows]
     env:
        powershell: C:\windows\System32\WindowsPowerShell\v1.0\powershell.EXE
 
